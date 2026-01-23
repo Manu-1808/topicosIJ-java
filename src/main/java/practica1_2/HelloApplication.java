@@ -1,4 +1,4 @@
-package com.example.topicosij;
+package practica1_2;
 
 import javafx.application.Application;
 import javafx.scene.Scene;
@@ -68,10 +68,10 @@ public class HelloApplication extends Application {
         );
         root.setStyle("-fx-padding: 30; -fx-background-color: white;");
 
-        Scene scene = new Scene(root, 400, 300);
+        Scene escena= new Scene(root,300,250, Color.LIGHTBLUE);
 
         stage.setTitle("Práctica 1.2 - Efectos JavaFX");
-        stage.setScene(scene);
+        stage.setScene(escena);
         stage.show();
     }
 
