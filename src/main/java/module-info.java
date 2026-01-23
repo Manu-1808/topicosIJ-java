@@ -7,5 +7,7 @@ module com.example.topicosij {
     //exports com.example.topicosij;
     exports practica1_1;
     exports practica1_2;
+    exports practica1_3;
+    exports practica1_4;
     opens practica1_2 to javafx.fxml;
 }
