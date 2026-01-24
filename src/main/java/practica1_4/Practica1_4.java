@@ -23,28 +23,28 @@ public class Practica1_4 extends Application {
         Scene scene = new Scene(root, 1000, 650, Color.LIGHTGRAY);
         stage.setScene(scene);
 
-        /* ===================== FIGURAS ===================== */
+        //figuras
 
-        // Rectangle
+        // rectangulo
         Rectangle rectangle = new Rectangle(50, 50, 120, 80);
         rectangle.setFill(Color.CORNFLOWERBLUE);
 
-        // Circle
+        // circulo
         Circle circle = new Circle(300, 90, 40, Color.LIGHTGREEN);
 
-        // Line
+        // linea
         Line line = new Line(50, 200, 200, 200);
         line.setStroke(Color.BLACK);
         line.setStrokeWidth(4);
 
-        // Arc
+        // arco
         Arc arc = new Arc(300, 200, 50, 40, 45, 270);
         arc.setType(ArcType.OPEN);
         arc.setStroke(Color.DARKRED);
         arc.setStrokeWidth(3);
         arc.setFill(Color.TRANSPARENT);
 
-        // Polygon
+        // poligonos
         Polygon polygon = new Polygon(
                 50.0, 320.0,
                 110.0, 260.0,
@@ -89,7 +89,7 @@ public class Practica1_4 extends Application {
         path.setFill(Color.YELLOW);
         path.setStroke(Color.GOLDENROD);
 
-        // SVGPath
+        // SVGPath(estrella)
         SVGPath svgPath = new SVGPath();
         svgPath.setContent(
                 "M 600 130 L 620 180 L 680 180 L 630 210 L 650 260 " +
@@ -97,7 +97,7 @@ public class Practica1_4 extends Application {
         );
         svgPath.setFill(Color.RED);
 
-        // Text
+        // texto
         Text text = new Text(450, 350, "Animaciones JavaFX");
         text.setFont(Font.font(Font.getDefault().getFamily(), FontWeight.BOLD, 26));
 
@@ -108,7 +108,7 @@ public class Practica1_4 extends Application {
                 path, svgPath, text
         );
 
-        /* ===================== ANIMACIONES ===================== */
+        //animacion
 
         // ScaleTransition
         ScaleTransition scale = new ScaleTransition(Duration.seconds(2), rectangle);
