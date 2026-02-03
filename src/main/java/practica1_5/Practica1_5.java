@@ -27,7 +27,7 @@ public class Practica1_5 extends Application {
         double startY = 80;
         double espacio = 60;
 
-        // ========== MoveTo + LineTo ==========
+        // move to
         agregarEjemplo(
                 root,
                 "MoveTo + LineTo",
@@ -40,7 +40,7 @@ public class Practica1_5 extends Application {
                 startY - 15
         );
 
-        // ========== HLineTo ==========
+        // hlineto
         startY += espacio;
         agregarEjemplo(
                 root,
@@ -54,7 +54,7 @@ public class Practica1_5 extends Application {
                 startY - 15
         );
 
-        // ========== VLineTo ==========
+        // vlineto
         startY += espacio;
         agregarEjemplo(
                 root,
@@ -68,7 +68,7 @@ public class Practica1_5 extends Application {
                 startY - 15
         );
 
-        // ========== QuadCurveTo ==========
+        //cuadcurbe
         startY += espacio;
         agregarEjemplo(
                 root,
@@ -82,7 +82,7 @@ public class Practica1_5 extends Application {
                 startY - 15
         );
 
-        // ========== CubicCurveTo ==========
+        // cubiccurbe
         startY += espacio;
         agregarEjemplo(
                 root,
@@ -100,7 +100,7 @@ public class Practica1_5 extends Application {
                 startY - 15
         );
 
-        // ========== ArcTo ==========
+        //arc to
         startY += espacio;
         ArcTo arc = new ArcTo();
         arc.setX(startX + 200);
@@ -121,7 +121,7 @@ public class Practica1_5 extends Application {
                 startY - 15
         );
 
-        // ========== ClosePath ==========
+        // closepath
         startY += espacio;
         agregarEjemplo(
                 root,
